@@ -5,9 +5,18 @@ let selected_operator;
 function assignValues(value) {
     if (first_choice === undefined) {
         first_choice = value;
-    }else if (second_choice === undefined){
-        second_choice = value;
+    
+    }else if( first_choice !== undefined && selected_operator === undefined){
+        first_choice = Number(String(first_choice) + String(value));
     }
+    
+    else if (second_choice === undefined){
+        second_choice = value;
+        
+    }else if( second_choice !== undefined){
+        second_choice = Number(String(second_choice) + String(value));
+    }
+    console.log(first_choice, second_choice);
 }
 function assignOperator(value) {
     selected_operator = value;
