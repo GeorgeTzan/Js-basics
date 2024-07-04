@@ -49,7 +49,7 @@ function Oprator_Switch(){
 function Operator_result(){
     if (first_choice !== undefined && second_choice !== undefined){
         let final_choice;
-        OpratorSwitch()
+        Oprator_Switch()
         alert('Your result is:' + final_choice);
         first_choice = undefined;
         second_choice = undefined;
