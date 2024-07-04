@@ -19,31 +19,52 @@
         .Number0{
             width: 350%;
         }
+        .Clear{
+            margin-left: 250%;
+            width: 220%;
+        }
+        .output{
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        .dev{
+            text-align: center;
+            color: rgb(158, 15, 15);
+
+        }
     </style>
 </head>
 <body>
 
+    <h3 class="dev">github.com/georgetzan</h3>
+    
     <h1 style="text-align: center;">Calculator</h1>
     <div class="grid-container">
+        
+        <div class="Number1"><button onclick="assign_values(1)">1</button></div>
+        <div class="Number2"><button onclick="assign_values(2)">2</button></div>
+        <div class="Number3"><button onclick="assign_values(3)">3</button></div>
+        <div class="Add"><button onclick="assign_operator('+')">+</button></div>
+        <div class="Sub"><button onclick="assign_operator('-')">-</button></div>
 
-        <div class="Number1"><button onclick="assignValues(1)">1</button></div>
-        <div class="Number2"><button onclick="assignValues(2)">2</button></div>
-        <div class="Number3"><button onclick="assignValues(3)">3</button></div>
-        <div class="Add"><button onclick="assignOperator('+')">+</button></div>
-        <div class="Sub"><button onclick="assignOperator('-')">-</button></div>
+        <div class="Number4"><button onclick="assign_values(4)">4</button></div>
+        <div class="Number5"><button onclick="assign_values(5)">5</button></div>
+        <div class="Number6"><button onclick="assign_values(6)">6</button></div>
+        <div class="Power"><button onclick="assign_operator('*')">*</button></div>
+        <div class="Division"><button onclick="assign_operator('/')">/</button></div>
 
-        <div class="Number4"><button onclick="assignValues(4)">4</button></div>
-        <div class="Number5"><button onclick="assignValues(5)">5</button></div>
-        <div class="Number6"><button onclick="assignValues(6)">6</button></div>
-        <div class="Power"><button onclick="assignOperator('*')">*</button></div>
-        <div class="Division"><button onclick="assignOperator('/')">/</button></div>
+        <div class="Number7"><button onclick="assign_values(7)">7</button></div>
+        <div class="Number8"><button onclick="assign_values(8)">8</button></div>
+        <div class="Number9"><button onclick="assign_values(9)">9</button></div>
+        <div class="Equal" style="grid-column: span 2;"><button onclick="operator_result()">=</button></div>
 
-        <div class="Number7"><button onclick="assignValues(7)">7</button></div>
-        <div class="Number8"><button onclick="assignValues(8)">8</button></div>
-        <div class="Number9"><button onclick="assignValues(9)">9</button></div>
-        <div class="Equal" style="grid-column: span 2;"><button onclick="Operator()">=</button></div>
+        <div class="Number0"><button onclick="assign_values(0)">0</button></div>
+        <div class="Clear"><button onclick="clear_calc()">CE</button></div>
+    </div>
 
-        <div class="Number0"><button onclick="assignValues(0)">0</button></div>
+    <div class="output">
+        <h2 id="calculation-output">Current Input: </h2>
     </div>
 
     <script src="index.js"></script>
